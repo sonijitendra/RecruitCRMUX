@@ -24,7 +24,7 @@ export interface Job {
   location: string;
   salaryMin: number;
   salaryMax: number;
-  status: 'Active' | 'In Review' | 'Draft' | 'Closed';
+  status: "Active" | "In Review" | "Draft" | "Closed";
   postedDate: string;
   applications: number;
 }
@@ -41,7 +41,7 @@ export interface Contact {
 
 export interface Activity {
   id: string;
-  type: 'call' | 'email' | 'meeting' | 'note' | 'interview';
+  type: "call" | "email" | "meeting" | "note" | "interview";
   title: string;
   description: string;
   timestamp: string;
@@ -58,14 +58,14 @@ export const mockCompany: Company = {
   phone: "+1 (555) 123-4567",
   industry: "Technology",
   size: "501-1000 employees",
-  founded: "2010"
+  founded: "2010",
 };
 
 export const mockMetrics: Metrics = {
   openJobs: 12,
   activeCandidates: 84,
   lastActivity: "2h ago",
-  rating: 4.8
+  rating: 4.8,
 };
 
 export const mockJobs: Job[] = [
@@ -78,7 +78,7 @@ export const mockJobs: Job[] = [
     salaryMax: 120000,
     status: "Active",
     postedDate: "3 days ago",
-    applications: 12
+    applications: 12,
   },
   {
     id: "2",
@@ -89,7 +89,7 @@ export const mockJobs: Job[] = [
     salaryMax: 160000,
     status: "In Review",
     postedDate: "1 week ago",
-    applications: 24
+    applications: 24,
   },
   {
     id: "3",
@@ -100,8 +100,8 @@ export const mockJobs: Job[] = [
     salaryMax: 110000,
     status: "Draft",
     postedDate: "5 days ago",
-    applications: 0
-  }
+    applications: 0,
+  },
 ];
 
 export const mockContacts: Contact[] = [
@@ -112,7 +112,7 @@ export const mockContacts: Contact[] = [
     email: "john.smith@company.com",
     phone: "+1 (555) 123-4567",
     isPrimary: true,
-    initials: "JS"
+    initials: "JS",
   },
   {
     id: "2",
@@ -121,7 +121,7 @@ export const mockContacts: Contact[] = [
     email: "sarah.davis@company.com",
     phone: "+1 (555) 123-4568",
     isPrimary: false,
-    initials: "SD"
+    initials: "SD",
   },
   {
     id: "3",
@@ -130,8 +130,8 @@ export const mockContacts: Contact[] = [
     email: "mike.wilson@company.com",
     phone: "+1 (555) 123-4569",
     isPrimary: false,
-    initials: "MW"
-  }
+    initials: "MW",
+  },
 ];
 
 export const mockActivities: Activity[] = [
@@ -139,34 +139,38 @@ export const mockActivities: Activity[] = [
     id: "1",
     type: "call",
     title: "Phone Call with Sarah Johnson",
-    description: "Discussed the Senior Developer position. Candidate is interested and available for next week interview.",
+    description:
+      "Discussed the Senior Developer position. Candidate is interested and available for next week interview.",
     timestamp: "2 hours ago",
     duration: "15 min",
-    by: "Jitendra"
+    by: "Jitendra",
   },
   {
     id: "2",
     type: "email",
     title: "Email Sent to Mike Chen",
-    description: "Sent follow-up email about Product Manager interview feedback and next steps.",
+    description:
+      "Sent follow-up email about Product Manager interview feedback and next steps.",
     timestamp: "1 day ago",
-    by: "Jitendra"
+    by: "Jitendra",
   },
   {
     id: "3",
     type: "interview",
     title: "Interview Scheduled",
-    description: "Scheduled technical interview for Alex Rodriguez for UX Designer position.",
+    description:
+      "Scheduled technical interview for Alex Rodriguez for UX Designer position.",
     timestamp: "2 days ago",
-    by: "Jitendra"
+    by: "Jitendra",
   },
   {
     id: "4",
     type: "note",
     title: "Note Added",
-    description: "Company is looking to expand their development team by Q1 2025. Priority on senior-level positions.",
+    description:
+      "Company is looking to expand their development team by Q1 2025. Priority on senior-level positions.",
     timestamp: "3 days ago",
-    by: "Jitendra"
+    by: "Jitendra",
   },
   {
     id: "5",
@@ -174,6 +178,6 @@ export const mockActivities: Activity[] = [
     title: "Called candidate Sarah Johnson",
     description: "Initial screening call for Frontend Developer position.",
     timestamp: "2 hours ago",
-    by: "Jitendra"
-  }
+    by: "Jitendra",
+  },
 ];
