@@ -1,0 +1,46 @@
+ROLE: You are a UX-focused frontend developer. I need a working **React + Tailwind CSS** project that acts as a prototype for the Recruit CRM "Company Profile Page". 
+
+OBJECTIVE: This is a coding-based reference prototype so that I can replicate the layout in Figma for my assignment. The design must mimic Recruit CRM’s branding (clean SaaS, blue/gray theme, rounded buttons, tabbed navigation). Do not invent a new style system.
+
+REQUIREMENTS:
+1. Page structure:
+   - Top Header: Company Logo placeholder, Company Name, Website, Location, Edit button.
+   - Summary Bar (below header): Cards showing Open Jobs, Active Candidates, Last Activity, Rating.
+   - Tab Navigation (full-width, horizontal): Overview | Jobs | Contacts | Candidates | Activities.
+   - Main Content Area:
+     - Overview Tab: Company details (address, owner, phone), and a Recent Activity feed.
+     - Jobs Tab: List of 3 sample job cards (Job Title, Status, Posted Date).
+     - Contacts Tab: Table of 3 contacts (Name, Role, Email, Phone).
+     - Candidates Tab: Placeholder text “Candidate list goes here”.
+     - Activities Tab: Log of sample recruiter activities.
+   - Quick Actions Toolbar (top-right sticky): Buttons → “Log Call”, “Add Job”, “View History”.
+   - Modal popups for “Log Call” and “Add Job” with form fields (dummy).
+
+2. Styling:
+   - Use Tailwind for spacing, colors, layout, and typography.
+   - Blue primary color, gray secondary. Rounded corners and soft shadows.
+   - Keep clean and minimal, easy to scan.
+
+3. Data:
+   - Provide sample dummy data for jobs, contacts, and activities.
+   - Ensure the layout looks realistic and professional.
+
+4. Accessibility:
+   - Buttons with aria-labels.
+   - Tabs keyboard-accessible.
+
+5. Deliverables:
+   - App.jsx with full layout code.
+   - A reusable component structure for Header, Tabs, Cards, and Modals.
+   - styles.css (or Tailwind classes).
+   - Instructions in README on how to run in Replit.
+   - Also generate a separate file `RATIONALE.md` with:
+     - Table of pain points (Layout, Navigation, Task Flows).
+     - List of redesign changes and why.
+     - Before/After steps for “Log Call” and “Add Job”.
+     - Short test plan (5-user quick test).
+
+OUTPUT FORMAT:
+- Complete React project scaffold (App.jsx, components, dummy data).
+- Tailwind styling applied.
+- `RATIONALE.md` text included in output.
